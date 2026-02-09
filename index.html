@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Fandom Notes</title>
 </head>
 <body>
-    <header>
+    <header class="header_container">
         <a href="index.html" class="logo">Фандомы</a>
     </header>
 
-    <button onclick="openFandom('mass_effect')">Mass Effect</button>
-    <button onclick="openFandom('hp')">Harry Potter</button>
+    <div class="fandom_buttons">
+        <button class="fun_button" onclick="openFandom('mass_effect')">Mass Effect</button>
+        <button class="fun_button" onclick="openFandom('hp')">Harry Potter</button>
+    </div>
+    <!-- /.fandom_buttons -->
 
     <script src="app.js"></script>
 

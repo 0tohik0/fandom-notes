@@ -14,10 +14,27 @@
         <a href="index.html" class="logo">Фандомы</a>
     </header>
 
-    <h1>Заметки</h1>
+    <h1>Новая заметка</h1>
 
-    <textarea id="noteText" rows="10" cols="40"></textarea>
-    <br>
+    <div>
+      <label>Персонаж/и:</label>
+      <input id="heroName" placeholder="Имя персонажа">
+
+      <select id="existingHeroes">
+        <option value="">— выбрать из базы —</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Тема (цитата / идея / зарисовка):</label><br>
+      <input id="noteTheme" style="width:90%">
+    </div>
+
+    <div>
+      <label>Описание:</label><br>
+      <textarea id="noteText" rows="10" cols="50"></textarea>
+    </div>
+
     <button onclick="saveNote()">Сохранить</button>
 
     <script src="app.js"></script>

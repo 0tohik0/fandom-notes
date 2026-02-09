@@ -39,15 +39,34 @@ header {
   font-weight: bold;
 }
 
-.fandom_buttons {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.cards {
+  max-width: 900px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
 }
 
-.fun_button {
-  padding: 24px;
+.card {
+  background: linear-gradient(200deg, #6d685d91, #2f2828);
+  border: 1px solid #333;
+  border-radius: 18px;
+  padding: 22px;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #666;
+}
+
+.card h2 {
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+.card p {
+  color: #b8b8b8;
+  font-size: 14px;
+}

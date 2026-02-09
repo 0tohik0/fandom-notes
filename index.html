@@ -14,11 +14,20 @@
         <a href="index.html" class="logo">Фандомы</a>
     </header>
 
-    <div class="fandom_buttons">
-        <button class="fun_button" onclick="openFandom('mass_effect')">Mass Effect</button>
-        <button class="fun_button" onclick="openFandom('hp')">Harry Potter</button>
-    </div>
-    <!-- /.fandom_buttons -->
+<div class="cards">
+
+  <div class="card" onclick="openFandom('mass_effect')">
+    <h2>Mass Effect</h2>
+    <p id="last_mass_effect">Последняя заметка: —</p>
+  </div>
+
+  <div class="card" onclick="openFandom('hp')">
+    <h2>Harry Potter</h2>
+    <p id="last_hp">Последняя заметка: —</p>
+  </div>
+
+</div>
+    <!-- /.cards -->
 
     <script src="app.js"></script>
 
